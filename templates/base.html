@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="ru-RU">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Основные метатеги -->
+    <title>Защита прав предпринимателей | Юридическая помощь при спорах с ФНС</title>
+    <meta name="description"
+        content="Профессиональная юридическая защита предпринимателей при налоговых проверках, доначислениях и блокировке счетов. Бесплатная консультация.">
+    <meta name="keywords"
+        content="юрист, налоговые споры, ФНС, защита прав предпринимателя, налоговая проверка, доначисление налогов">
+    <meta name="author" content="ПрофНалог">
+    <meta name="robots" content="index, follow">
+
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="#">
+    <meta property="og:title" content="Защита прав предпринимателей | Юридическая помощь при спорах с ФНС">
+    <meta property="og:description"
+        content="Профессиональная юридическая защита предпринимателей при налоговых проверках, доначислениях и блокировке счетов. Бесплатная консультация.">
+    <meta property="og:image"
+        content="https://images.unsplash.com/photo-1589829545856-d10d557cf95f?ixlib=rb-4.0.3&auto=format&fit=crop&w=1200&h=630&q=80">
+    <meta property="og:image:width" content="1200">
+    <meta property="og:image:height" content="630">
+    <meta property="og:site_name" content="ПрофНалог">
+    <meta property="og:locale" content="ru_RU">
+
+    <!-- Twitter -->
+    <meta property="twitter:card" content="summary_large_image">
+    <meta property="twitter:url" content="#">
+    <meta property="twitter:title" content="Защита прав предпринимателей | Юридическая помощь при спорах с ФНС">
+    <meta property="twitter:description"
+        content="Профессиональная юридическая защита предпринимателей при налоговых проверках, доначислениях и блокировке счетов. Бесплатная консультация.">
+    <meta property="twitter:image"
+        content="https://images.unsplash.com/photo-1589829545856-d10d557cf95f?ixlib=rb-4.0.3&auto=format&fit=crop&w=1200&h=630&q=80">
+
+    <!-- VK -->
+    <meta property="vk:image"
+        content="https://images.unsplash.com/photo-1589829545856-d10d557cf95f?ixlib=rb-4.0.3&auto=format&fit=crop&w=1200&h=630&q=80">
+
+    <!-- Favicon -->
+    <link rel="icon" type="image/png" sizes="256x256" href="/static/img/favicon.ico">
+    <link rel="apple-touch-icon" sizes="180x180" href="/static/img/apple.png">
+
+    <!-- Стили и шрифты -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&family=Open+Sans:wght@400;600&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="/static/css/styles.css">
+    {% block headPlace %}{% endblock %}
+
+    <style>
+        {
+            % block styles %
+        }
+
+            {
+            % endblock %
+        }
+    </style>
+</head>
+
+<body>
+    <!-- Header -->
+    <header>
+        <div class="container header-container">
+            <div class="logo">
+                <div class="h1">Проф<span>Налог</span></div>
+            </div>
+            <div class="mobile-menu">
+                <i class="fas fa-bars"></i>
+            </div>
+            <nav>
+                <ul class="navbar-nav">
+                    {% if request.endpoint == 'index' %}
+                    <!-- На главной странице — якорные ссылки -->
+                    <li><a href="#home">Главная</a></li>
+                    <li><a href="#about">О нас</a></li>
+                    <li><a href="#services">Услуги</a></li>
+                    <li><a href="#reviews">Отзывы</a></li>
+                    <li><a href="#contact">Контакты</a></li>
+                    {% else %}
+                    <!-- На других страницах — ссылки на главную с якорями -->
+                    <li><a href="{{ url_for('index') }}#home">Главная</a></li>
+                    <li><a href="{{ url_for('index') }}#about">О нас</a></li>
+                    <li><a href="{{ url_for('index') }}#services">Услуги</a></li>
+                    <li><a href="{{ url_for('index') }}#reviews">Отзывы</a></li>
+                    <li><a href="{{ url_for('index') }}#contact">Контакты</a></li>
+                    {% endif %}
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    {% block main %}{% endblock %}
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-column">
+                    <h3>ПрофНалог</h3>
+                    <p>Профессиональная юридическая помощь предпринимателям в спорах с ФНС.</p>
+                    <div class="social-links">
+                        <a href="#"><i class="fab fa-vk"></i></a>
+                        <a href="#"><i class="fab fa-telegram"></i></a>
+                        <a href="#"><i class="fab fa-whatsapp"></i></a>
+                    </div>
+                </div>
+                <div class="footer-column">
+                    <h3 id="services">Услуги</h3>
+                    <ul>
+                        <li><a href="/nalogovaya-proverka">Налоговые проверки</a></li>
+                        <li><a href="/donachisleniya-nalogov">Доначисления налогов</a></li>
+                        <li><a href="/blokirovka-schetov">Блокировка счетов</a></li>
+                        <li><a href="/nalogovaya-otvetstvennost">Налоговая ответственность</a></li>
+                    </ul>
+                </div>
+                <div class="footer-column">
+                    <h3>Полезное</h3>
+                    <ul>
+                        <li><a href="/blog">Блог</a></li>
+                        <li><a href="/faq">Вопросы и ответы</a></li>
+                        <li><a href="/cases">Кейсы</a></li>
+                        <li><a href="/privacy">Политика конфиденциальности</a></li>
+                    </ul>
+                </div>
+                <div class="footer-column">
+                    <h3>Контакты</h3>
+                    <ul>
+                        <li><i class="fas fa-map-marker-alt"></i> г. Нижневартовск</li>
+                        <li><i class="fas fa-phone"></i> +7 (922) 655-45-38</li>
+                        <li><i class="fas fa-phone"></i> +7 (922) 258-60-28</li>
+                        <li><i class="fas fa-envelope"></i> info@protect-business.ru</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="copyright">
+                <p>&copy; 2025 Юридическая компания "ПрофНалог". Все права защищены.</p>
+                <p>Created by gamma</p>
+            </div>
+        </div>
+    </footer>
+
+    <div class="flash-messages">
+        {% with messages = get_flashed_messages(with_categories=true) %}
+            {% if messages %}
+                {% for category, message in messages %}
+                    <div class="flash-message {{ category if category else 'info' }} auto-hide" onclick="this.remove()">
+                        {{ message }}
+                        <button class="close-btn" onclick="event.stopPropagation(); this.parentElement.remove();">&times;</button>
+                    </div>
+                {% endfor %}
+            {% endif %}
+        {% endwith %}
+    </div>
+
+    <script src="static/js/main.js"></script>
+
+    <script type="application/ld+json">
+        {
+          "@context": "https://schema.org",
+          "@type": "LegalService",
+          "name": "ПрофНалог",
+          "description": "Юридическая помощь предпринимателям в спорах с ФНС",
+          "address": {
+            "@type": "PostalAddress",
+            "addressLocality": "Нижневартовск"
+          },
+          "telephone": "+79226554538",
+          "url": "https://unlucky666god.github.io/",
+          "areaServed": "RU"
+        }
+    </script>
+
+    {% block scripts %}{% endblock %}
+
+    <script src="https://www.google.com/recaptcha/api.js" async defer></script>
+</body>
+
+</html>

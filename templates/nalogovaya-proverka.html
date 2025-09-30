@@ -1,0 +1,57 @@
+{% extends "base.html" %}
+{% block headPlace %}
+<link rel="stylesheet" href="/static/css/nalogovaya-proverka.css">
+{% endblock %}
+{% block main %}
+<main class="page-content">
+    <div class="container">
+        <div class="page-header">
+            <h1>Сопровождение налоговых проверок</h1>
+            <p>Полная юридическая поддержка на всех этапах взаимодействия с налоговыми органами — от запроса документов
+                до получения акта проверки.</p>
+        </div>
+
+        <div class="page-section">
+            <h2>Что входит в сопровождение?</h2>
+            <div class="features-grid">
+                <div class="feature-card">
+                    <div class="feature-icon"><i class="fas fa-file-alt"></i></div>
+                    <h3>Анализ запросов ФНС</h3>
+                    <p>Проверим законность требований и подготовим грамотные ответы.</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon"><i class="fas fa-user-shield"></i></div>
+                    <h3>Присутствие на проверке</h3>
+                    <p>Наш юрист будет с вами на всех встречах с инспекторами.</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon"><i class="fas fa-balance-scale"></i></div>
+                    <h3>Подготовка возражений</h3>
+                    <p>Если ФНС выявила нарушения — оспорим их до вынесения решения.</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon"><i class="fas fa-shield-alt"></i></div>
+                    <h3>Защита от штрафов</h3>
+                    <p>Снизим или полностью исключим налоговые санкции.</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="page-section">
+            <h2>Типы проверок, с которыми мы работаем</h2>
+            <ul class="page-list">
+                <li><strong>Камеральная проверка</strong> — автоматическая проверка деклараций (ст. 88 НК РФ).</li>
+                <li><strong>Выездная проверка</strong> — инспекторы приходят в офис (ст. 89 НК РФ).</li>
+                <li><strong>Встречная проверка</strong> — запросы вашим контрагентам (ст. 93.1 НК РФ).</li>
+                <li><strong>Повторная проверка</strong> — если ФНС не согласна с вашими возражениями.</li>
+            </ul>
+        </div>
+
+        <div class="page-cta">
+            <h2>Не дайте ФНС нарушить ваши права</h2>
+            <p>Даже одна ошибка в ответе на запрос может привести к доначислениям на миллионы рублей.</p>
+            <a href="/contact" class="btn btn-accent">Получить консультацию</a>
+        </div>
+    </div>
+</main>
+{% endblock %}

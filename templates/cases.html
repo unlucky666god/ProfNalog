@@ -1,0 +1,135 @@
+{% extends "base.html" %}
+{% block styles %}
+.page-content {
+padding: 100px 0 80px;
+background-color: #fff;
+}
+.page-header {
+text-align: center;
+margin-bottom: 60px;
+}
+.page-header h1 {
+font-size: 2.5rem;
+color: var(--primary);
+margin-bottom: 1.2rem;
+}
+.page-header p {
+font-size: 1.2rem;
+color: var(--gray);
+max-width: 800px;
+margin: 0 auto;
+}
+
+.case-grid {
+display: grid;
+grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+gap: 40px;
+margin-top: 40px;
+}
+
+.case-card {
+background: white;
+border-radius: 8px;
+padding: 30px;
+box-shadow: 0 5px 15px rgba(0,0,0,0.05);
+transition: transform 0.3s ease;
+}
+.case-card:hover {
+transform: translateY(-6px);
+box-shadow: 0 10px 25px rgba(0,0,0,0.1);
+}
+
+.case-card h3 {
+font-size: 1.4rem;
+color: var(--primary);
+margin-bottom: 15px;
+position: relative;
+padding-bottom: 12px;
+}
+.case-card h3:after {
+content: '';
+position: absolute;
+bottom: 0;
+left: 0;
+width: 50px;
+height: 3px;
+background: var(--accent);
+}
+
+.case-card p {
+color: var(--dark);
+line-height: 1.7;
+margin-bottom: 15px;
+}
+
+.case-result {
+background: var(--light);
+padding: 15px;
+border-radius: 6px;
+margin-top: 15px;
+font-weight: 600;
+color: var(--secondary);
+}
+
+@media (max-width: 768px) {
+.page-content { padding: 70px 0 60px; }
+.page-header h1 { font-size: 2rem; }
+.page-header p { font-size: 1rem; }
+.case-grid { grid-template-columns: 1fr; }
+}
+
+.faq-section h2:after, .faq-cta h2:after {
+    left: 50%;
+    transform: translateX(-50%);
+}
+{% endblock %}
+{% block main %}
+<main class="page-content">
+    <div class="container">
+        <div class="page-header">
+            <h1>Кейсы</h1>
+            <p>Реальные истории наших клиентов: как мы помогли предпринимателям отстоять права, избежать миллионных
+                доначислений и вернуть контроль над бизнесом.</p>
+        </div>
+
+        <div class="case-grid">
+            <!-- Кейс 1 -->
+            <div class="case-card">
+                <h3>Доначисление НДС на 2,3 млн ₽</h3>
+                <p>ИП из Москвы получил требование ФНС после камеральной проверки. Налоговая сочла сделки с
+                    контрагентами «недобросовестными» и доначислила НДС.</p>
+                <p>Мы провели анализ цепочки поставок, запросили пояснения у контрагентов и подготовили возражения с
+                    доказательствами экономической обоснованности операций.</p>
+                <div class="case-result">Результат: доначисления полностью отменены.</div>
+            </div>
+
+            <!-- Кейс 2 -->
+            <div class="case-card">
+                <h3>Блокировка счёта ИП</h3>
+                <p>Счёт индивидуального предпринимателя из Екатеринбурга был заблокирован по ст. 76 НК РФ из-за
+                    несвоевременной сдачи декларации по УСН.</p>
+                <p>В течение 2 часов мы подготовили ходатайство о снятии блокировки с приложением подтверждения отправки
+                    декларации через ЭДО.</p>
+                <div class="case-result">Результат: счёт разблокирован через 5 дней.</div>
+            </div>
+
+            <!-- Кейс 3 -->
+            <div class="case-card">
+                <h3>Штраф по ст. 122 НК РФ на 1,5 млн ₽</h3>
+                <p>ООО из Казани привлекли к ответственности за «неполную уплату налога». ФНС не приняла расходы по
+                    договорам с самозанятыми.</p>
+                <p>Мы доказали добросовестность компании и представили в суде подтверждение статуса самозанятых через
+                    ФНС России.</p>
+                <div class="case-result">Результат: решение ФНС отменено в суде.</div>
+            </div>
+        </div>
+
+        <div class="faq-cta"
+            style="text-align: center; margin-top: 60px; padding: 50px; background: linear-gradient(135deg, var(--primary) 0%, #2c5282 100%); color: white; border-radius: 12px;">
+            <h2>Ваш случай может стать следующим кейсом!</h2>
+            <p>Расскажите о своей ситуации — поможем найти решение.</p>
+            <a href="/#contact" class="btn btn-accent">Получить консультацию</a>
+        </div>
+    </div>
+</main>
+{% endblock %}

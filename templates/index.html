@@ -1,0 +1,271 @@
+{% extends "base.html" %}
+{% block main %}
+<!-- Hero Section -->
+<section class="hero" id="home">
+    <div class="hero-overlay"></div>
+    <div class="hero-image">
+        <img src="https://images.unsplash.com/photo-1589829545856-d10d557cf95f?ixlib=rb-4.0.3" alt="Юридическая защита">
+    </div>
+    <div class="container hero-content">
+        <div class="hero-text">
+            <h1>Защитим ваши права как предпринимателя в спорах с ФНС</h1>
+            <p>Защищаем бизнес от необоснованных претензий ФНС — быстро, честно и эффективно.</p>
+            <a href="#contact" class="btn btn-accent">Получить консультацию</a>
+        </div>
+    </div>
+</section>
+
+<!-- Features Section -->
+<section class="features">
+    <div class="container">
+        <div class="section-title">
+            <h2>Наши преимущества</h2>
+        </div>
+        <div class="features-grid">
+            <div class="feature-card">
+                <div class="feature-icon">
+                    <i class="fas fa-gavel"></i>
+                </div>
+                <h3>Опыт в налоговых спорах</h3>
+                <p>Более 10 лет успешной практики в защите прав предпринимателей</p>
+            </div>
+            <div class="feature-card">
+                <div class="feature-icon">
+                    <i class="fas fa-file-contract"></i>
+                </div>
+                <h3>Индивидуальный подход</h3>
+                <p>Каждый случай рассматриваем отдельно с учетом всех нюансов</p>
+            </div>
+            <div class="feature-card">
+                <div class="feature-icon">
+                    <i class="fas fa-shield-alt"></i>
+                </div>
+                <h3>Гарантия результата</h3>
+                <p>Работаем до достижения положительного результата для клиента</p>
+            </div>
+            <div class="feature-card">
+                <div class="feature-icon">
+                    <i class="fas fa-comments-dollar"></i>
+                </div>
+                <h3>Прозрачная оплата</h3>
+                <p>Cтоимость услуг без скрытых платежей</p>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- About Section -->
+<section class="about" id="about">
+    <div class="container about-content">
+        <div class="about-text">
+            <h2>О нашей компании</h2>
+            <p>Юридическая компания "ПрофНалог" специализируется на защите интересов предпринимателей в
+                сложных ситуациях, связанных с взаимодействием с налоговыми органами.</p>
+            <p>За годы работы мы накопили значительный опыт в следующих направлениях:</p>
+            <ul>
+                <li>Сопровождение налоговых проверок</li>
+                <li>Обжалование решений налоговых органов</li>
+                <li>Представительство в налоговых спорах</li>
+                <li>Защита от привлечения к налоговой ответственности</li>
+            </ul>
+            <p>Наши юристы имеют высшее юридическое образование и специализируются исключительно на налоговом праве.
+                Мы регулярно повышаем квалификацию и следим за изменениями в законодательстве.</p>
+            <a href="#contact" class="btn">Получить консультацию</a>
+        </div>
+        <div class="about-image">
+            <img src="https://images.unsplash.com/photo-1589829545856-d10d557cf95f?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&h=500&q=80"
+                alt="Юридическая консультация">
+        </div>
+    </div>
+</section>
+
+<!-- Reviews Section -->
+<section class="reviews" id="reviews">
+    <div class="container">
+        <div class="section-title">
+            <h2>Отзывы клиентов</h2>
+        </div>
+
+        <div class="reviews-container">
+            <!-- Первая строка карусели (движется влево) -->
+            <div class="carousel-wrapper">
+                <div class="carousel-track carousel-left" data-direction="left">
+                    <!-- Оригинальные отзывы -->
+                    <div class="review-card">
+                        <div class="review-header">
+                            <div class="review-avatar"><i class="fas fa-user"></i></div>
+                            <div class="review-info">
+                                <h4>Иван Петров</h4>
+                                <p>г. Москва</p>
+                            </div>
+                        </div>
+                        <p class="review-text">"Столкнулся с доначислением на сумму 2,3 млн рублей. Юристы компании
+                            провели тщательный анализ и подготовили грамотные возражения. В итоге доначисления были
+                            полностью отменены."</p>
+                    </div>
+                    <div class="review-card">
+                        <div class="review-header">
+                            <div class="review-avatar"><i class="fas fa-user"></i></div>
+                            <div class="review-info">
+                                <h4>Анна Сидорова</h4>
+                                <p>г. Санкт-Петербург</p>
+                            </div>
+                        </div>
+                        <p class="review-text">"При камеральной проверке налоговая потребовала огромную сумму.
+                            Обратилась в эту компанию. Специалисты быстро разобрались в ситуации и помогли избежать
+                            дополнительных платежей."</p>
+                    </div>
+                    <div class="review-card">
+                        <div class="review-header">
+                            <div class="review-avatar"><i class="fas fa-user"></i></div>
+                            <div class="review-info">
+                                <h4>Дмитрий Козлов</h4>
+                                <p>г. Екатеринбург</p>
+                            </div>
+                        </div>
+                        <p class="review-text">"Счет был заблокирован без предупреждения. Специалисты оперативно
+                            подготовили необходимые документы и добились разблокировки в течение недели."</p>
+                    </div>
+                    <div class="review-card">
+                        <div class="review-header">
+                            <div class="review-avatar"><i class="fas fa-user"></i></div>
+                            <div class="review-info">
+                                <h4>Елена Волкова</h4>
+                                <p>г. Новосибирск</p>
+                            </div>
+                        </div>
+                        <p class="review-text">"Спасибо за профессиональную помощь! Благодаря вашим юристам удалось
+                            избежать серьезных финансовых потерь. Рекомендую всем предпринимателям!"</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Вторая строка карусели (движется вправо) -->
+            <div class="carousel-wrapper">
+                <div class="carousel-track carousel-right" data-direction="right">
+                    <!-- Оригинальные отзывы -->
+                    <div class="review-card">
+                        <div class="review-header">
+                            <div class="review-avatar"><i class="fas fa-user"></i></div>
+                            <div class="review-info">
+                                <h4>Михаил Смирнов</h4>
+                                <p>г. Казань</p>
+                            </div>
+                        </div>
+                        <p class="review-text">"Обратился с серьезной проблемой - налоговая доначислила 1,5 млн.
+                            Работа была выполнена профессионально и в срок. Все доначисления аннулированы!"</p>
+                    </div>
+                    <div class="review-card">
+                        <div class="review-header">
+                            <div class="review-avatar"><i class="fas fa-user"></i></div>
+                            <div class="review-info">
+                                <h4>Ольга Кузнецова</h4>
+                                <p>г. Ростов-на-Дону</p>
+                            </div>
+                        </div>
+                        <p class="review-text">"Отличная команда специалистов! Быстро разобрались с ситуацией и
+                            нашли выход из сложной ситуации. Теперь только к вам!"</p>
+                    </div>
+                    <div class="review-card">
+                        <div class="review-header">
+                            <div class="review-avatar"><i class="fas fa-user"></i></div>
+                            <div class="review-info">
+                                <h4>Александр Новиков</h4>
+                                <p>г. Челябинск</p>
+                            </div>
+                        </div>
+                        <p class="review-text">"Профессиональный подход и высокий уровень компетенции. Рекомендую
+                            всем, кто столкнулся с проблемами с ФНС!"</p>
+                    </div>
+                    <div class="review-card">
+                        <div class="review-header">
+                            <div class="review-avatar"><i class="fas fa-user"></i></div>
+                            <div class="review-info">
+                                <h4>Татьяна Морозова</h4>
+                                <p>г. Самара</p>
+                            </div>
+                        </div>
+                        <p class="review-text">"Спасибо за оперативную помощь! Счет был разблокирован в тот же день.
+                            Очень довольна результатом!"</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Contact Section -->
+<section class="contact" id="contact">
+    <div class="container contact-container">
+        <div class="contact-info">
+            <h2>Контакты</h2>
+            <div class="contact-details">
+                <div class="contact-item">
+                    <div class="contact-icon">
+                        <i class="fas fa-map-marker-alt"></i>
+                    </div>
+                    <div>
+                        <h3>Адрес</h3>
+                        <p>г. Нижневартовск</p>
+                    </div>
+                </div>
+                <div class="contact-item">
+                    <div class="contact-icon">
+                        <i class="fas fa-phone"></i>
+                    </div>
+                    <div>
+                        <h3>Телефон</h3>
+                        <p>+7 (922) 655-45-38</p>
+                        <p>+7 (922) 258-60-28</p>
+                    </div>
+                </div>
+                <div class="contact-item">
+                    <div class="contact-icon">
+                        <i class="fas fa-envelope"></i>
+                    </div>
+                    <div>
+                        <h3>Email</h3>
+                        <p>info@protect-business.ru</p>
+                    </div>
+                </div>
+                <div class="contact-item">
+                    <div class="contact-icon">
+                        <i class="fas fa-clock"></i>
+                    </div>
+                    <div>
+                        <h3>Режим работы</h3>
+                        <p>Пн-Пт: 9:00 - 18:00</p>
+                        <p>Сб-Вс: выходные</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="contact-form">
+            <h2>Оставить заявку</h2>
+            <form method="POST" action="/submit">
+                <div class="form-group">
+                    <input type="text" name="name" placeholder="Ваше имя" required>
+                </div>
+                <div class="form-group">
+                    <input type="tel" name="phone" placeholder="Ваш телефон" required>
+                </div>
+                <div class="form-group">
+                    <textarea name="message" placeholder="Краткое описание ситуации"></textarea>
+                </div>
+                <div class="form-group">
+                    <label>
+                        <input type="checkbox" style="width: 20px;" name="consent" value="1" required> Согласен на
+                        обработку персональных
+                        данных
+                    </label>
+                </div>
+
+                <div class="g-recaptcha" data-sitekey="6LfNOdkrAAAAAG99jfyQ6Ch6NcnVgnW7I1BF6KHZ"></div>
+
+                <button type="submit" class="btn btn-accent">Отправить заявку</button>
+            </form>
+        </div>
+    </div>
+</section>
+{% endblock %}

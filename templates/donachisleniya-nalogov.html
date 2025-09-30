@@ -1,0 +1,153 @@
+{% extends "base.html" %}
+{% block styles %}
+p{
+text-align: center;
+}
+.page-content {
+padding: 100px 0 80px;
+background-color: #fff;
+}
+.page-header {
+text-align: center;
+margin-bottom: 60px;
+}
+.page-header h1 {
+font-size: 2.5rem;
+color: var(--primary);
+margin-bottom: 1.2rem;
+}
+.page-header p {
+font-size: 1.2rem;
+color: var(--gray);
+max-width: 800px;
+margin: 0 auto;
+}
+.page-section {
+margin-bottom: 70px;
+}
+.page-section h2 {
+text-align: center;
+margin-bottom: 40px;
+}
+.page-section h2:after, .page-cta h2:after {
+left: 50%;
+transform: translateX(-50%);
+}
+.page-list {
+padding-left: 20px;
+margin-bottom: 40px;
+}
+.page-list li {
+margin-bottom: 16px;
+line-height: 1.7;
+font-size: 1.05rem;
+}
+.page-cta {
+background: linear-gradient(135deg, var(--primary) 0%, #2c5282 100%);
+color: white;
+padding: 50px;
+border-radius: 12px;
+text-align: center;
+margin-top: 40px;
+}
+.page-cta h2 {
+color: white;
+font-size: 2.2rem;
+margin-bottom: 20px;
+}
+.page-cta p {
+color: #e2e8f0;
+font-size: 1.1rem;
+max-width: 700px;
+margin: 0 auto 30px;
+}
+.page-cta .btn {
+background: var(--accent);
+color: var(--dark);
+font-weight: 700;
+}
+.page-cta .btn:hover {
+background: #b88d0a;
+box-shadow: 0 6px 16px rgba(212, 175, 55, 0.4);
+}
+
+@media (max-width: 768px) {
+.page-content { padding: 70px 0 60px; }
+.page-header h1 { font-size: 2rem; }
+.page-header p { font-size: 1rem; }
+.page-cta { padding: 30px 20px; }
+.page-cta h2 { font-size: 1.8rem; }
+.page-cta p { font-size: 1rem; }
+}
+@media (max-width: 576px) {
+.page-header h1 { font-size: 1.7rem; }
+.page-section h2 { font-size: 1.6rem; }
+}
+{% endblock %}
+{% block main %}
+<main class="page-content">
+    <div class="container">
+        <div class="page-header">
+            <h1>Оспаривание доначислений налогов</h1>
+            <p>Помогаем отменить необоснованные доначисления ФНС по НДС, налогу на прибыль, УСН и другим налогам — без
+                лишних платежей и штрафов.</p>
+        </div>
+
+        <div class="page-section">
+            <h2>Почему доначисляют?</h2>
+            <p>ФНС часто выносит решения на основе формальных признаков, игнорируя экономическую суть сделок. Вот частые
+                причины доначислений:</p>
+            <ul class="page-list">
+                <li>«Недостоверные» данные в декларациях (даже при отсутствии ошибок)</li>
+                <li>Сомнения в добросовестности контрагентов</li>
+                <li>Неправильная квалификация хозяйственных операций</li>
+                <li>Отказ в применении вычетов по НДС без оснований</li>
+                <li>Игнорирование судебной практики и разъяснений Минфина</li>
+            </ul>
+        </div>
+
+        <div class="page-section">
+            <h2>Как мы отменяем доначисления</h2>
+            <div class="features-grid">
+                <div class="feature-card">
+                    <div class="feature-icon"><i class="fas fa-search"></i></div>
+                    <h3>Глубокий анализ дела</h3>
+                    <p>Изучаем все документы, позицию ФНС и судебную практику.</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon"><i class="fas fa-file-contract"></i></div>
+                    <h3>Подготовка возражений</h3>
+                    <p>Составляем юридически безупречные возражения на решение ФНС.</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon"><i class="fas fa-gavel"></i></div>
+                    <h3>Представительство в суде</h3>
+                    <p>Если ФНС не согласна — отстаиваем вашу позицию в суде.</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon"><i class="fas fa-shield-alt"></i></div>
+                    <h3>Гарантия результата</h3>
+                    <p>Работаем до полной отмены доначислений или минимизации суммы.</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="page-section">
+            <h2>Результаты нашей работы</h2>
+            <p>В 87% случаев нам удаётся полностью отменить доначисления. В остальных — снижаем сумму в 2–5 раз.</p>
+            <blockquote
+                style="text-align: center; font-style: italic; margin: 30px 0; padding: 0 20px; border-left: none;">
+                «Столкнулся с доначислением на сумму 2,3 млн рублей. Юристы компании провели тщательный анализ и
+                подготовили грамотные возражения. В итоге доначисления были полностью отменены.»<br>
+                <strong>— Иван Петров, г. Москва</strong>
+            </blockquote>
+        </div>
+
+        <div class="page-cta">
+            <h2>Не соглашайтесь с доначислениями без консультации!</h2>
+            <p>Первые 30 минут — бесплатно. Узнайте, есть ли у вас шансы оспорить решение ФНС.</p>
+            <a href="/#contact" class="btn btn-accent">Получить консультацию</a>
+        </div>
+    </div>
+</main>
+{% endblock %}

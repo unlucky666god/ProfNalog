@@ -1,0 +1,153 @@
+{% extends "base.html" %}
+{% block styles %}
+.page-content {
+padding: 100px 0 80px;
+background-color: #fff;
+}
+
+.page-header {
+text-align: center;
+margin-bottom: 60px;
+}
+
+.page-header h1 {
+font-size: 2.5rem;
+color: var(--primary);
+margin-bottom: 1.2rem;
+}
+
+.page-header p {
+font-size: 1.2rem;
+color: var(--gray);
+max-width: 800px;
+margin: 0 auto;
+}
+
+.faq-list {
+max-width: 900px;
+margin: 0 auto;
+}
+
+.faq-item {
+margin-bottom: 30px;
+padding-bottom: 30px;
+border-bottom: 1px solid var(--light-gray);
+}
+
+.faq-item:last-child {
+border-bottom: none;
+margin-bottom: 0;
+padding-bottom: 0;
+}
+
+.faq-item h3 {
+font-size: 1.4rem;
+color: var(--primary);
+margin-bottom: 12px;
+line-height: 1.4;
+}
+
+.faq-item p {
+color: var(--dark);
+line-height: 1.7;
+font-size: 1.05rem;
+}
+
+.faq-cta {
+text-align: center;
+margin-top: 50px;
+padding: 40px;
+background: var(--light);
+border-radius: 12px;
+}
+
+.faq-cta h2 {
+font-size: 1.8rem;
+margin-bottom: 20px;
+}
+
+@media (max-width: 768px) {
+.page-content {
+padding: 70px 0 60px;
+}
+
+.page-header h1 {
+font-size: 2rem;
+}
+
+.page-header p {
+font-size: 1rem;
+}
+
+.faq-cta {
+padding: 30px 20px;
+}
+
+.faq-cta h2 {
+font-size: 1.6rem;
+}
+}
+
+.faq-section h2:after, .faq-cta h2:after {
+    left: 50%;
+    transform: translateX(-50%);
+}
+{% endblock %}
+{% block main %}
+<main class="page-content">
+    <div class="container">
+        <div class="page-header">
+            <h1>Вопросы и ответы</h1>
+            <p>Отвечаем на самые частые вопросы предпринимателей о взаимодействии с ФНС, налоговых проверках,
+                доначислениях и блокировке счетов.</p>
+        </div>
+
+        <div class="faq-list">
+            <div class="faq-item">
+                <h3>Могут ли заблокировать счёт без предупреждения?</h3>
+                <p>Да, по статье 76 Налогового кодекса РФ ФНС имеет право приостановить операции по счёту без
+                    предварительного уведомления, если налогоплательщик не представил декларацию или не уплатил
+                    налог в срок.</p>
+            </div>
+
+            <div class="faq-item">
+                <h3>Что делать, если пришла требование об уплате доначисленных налогов?</h3>
+                <p>Не спешите платить! У вас есть 10 рабочих дней на подачу возражений. Мы рекомендуем обратиться к
+                    юристу до истечения этого срока — в 87% случаев доначисления можно оспорить.</p>
+            </div>
+
+            <div class="faq-item">
+                <h3>Как вести себя при выездной налоговой проверке?</h3>
+                <p>Не отказывайте в доступе, но не предоставляйте документы без запроса. Записывайте все вопросы
+                    инспекторов. Лучше всего — пригласить юриста на встречу. Мы сопровождаем проверки с первого дня.
+                </p>
+            </div>
+
+            <div class="faq-item">
+                <h3>Могут ли привлечь к уголовной ответственности за налоговые нарушения?</h3>
+                <p>Да, по статье 199 УК РФ, если сумма неуплаченных налогов превышает 5 млн рублей за 3 года. Однако
+                    при отсутствии умысла и добросовестном поведении уголовное дело можно предотвратить на
+                    досудебной стадии.</p>
+            </div>
+
+            <div class="faq-item">
+                <h3>Сколько стоит консультация?</h3>
+                <p>Первичная консультация — полностью бесплатна. Мы анализируем вашу ситуацию, даём чёткий план
+                    действий и рассчитываем стоимость услуг, если потребуется дальнейшая помощь.</p>
+            </div>
+
+            <div class="faq-item">
+                <h3>Работаете ли вы с ИП и ООО?</h3>
+                <p>Да, мы помогаем как индивидуальным предпринимателям, так и юридическим лицам — от малого бизнеса
+                    до крупных компаний.</p>
+            </div>
+        </div>
+
+        <div class="faq-cta">
+            <h2>Остались вопросы?</h2>
+            <p>Задайте их нам — ответим в течение 1 часа в рабочее время.</p>
+            <a href="/#contact" class="btn btn-accent">Написать юристу</a>
+        </div>
+    </div>
+</main>
+{% endblock %}

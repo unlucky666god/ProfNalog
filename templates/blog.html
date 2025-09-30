@@ -1,0 +1,157 @@
+{% extends "base.html" %}
+{% block styles %}
+.page-content {
+padding: 100px 0 80px;
+background-color: #fff;
+}
+.page-header {
+text-align: center;
+margin-bottom: 60px;
+}
+.page-header h1 {
+font-size: 2.5rem;
+color: var(--primary);
+margin-bottom: 1.2rem;
+}
+.page-header p {
+font-size: 1.2rem;
+color: var(--gray);
+max-width: 800px;
+margin: 0 auto;
+}
+
+.blog-grid {
+display: grid;
+grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+gap: 40px;
+margin-top: 40px;
+}
+
+.blog-card {
+background: white;
+border-radius: 8px;
+overflow: hidden;
+box-shadow: 0 5px 15px rgba(0,0,0,0.05);
+transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+.blog-card:hover {
+transform: translateY(-8px);
+box-shadow: 0 12px 20px rgba(0,0,0,0.12);
+}
+
+.blog-card img {
+width: 100%;
+height: 200px;
+object-fit: cover;
+display: block;
+}
+
+.blog-card-content {
+padding: 25px;
+}
+
+.blog-card h3 {
+font-size: 1.4rem;
+margin-bottom: 15px;
+color: var(--primary);
+}
+
+.blog-card p {
+color: var(--gray);
+font-size: 1rem;
+margin-bottom: 20px;
+line-height: 1.6;
+}
+
+.blog-meta {
+display: flex;
+justify-content: space-between;
+color: #6c757d;
+font-size: 0.9rem;
+border-top: 1px solid var(--light-gray);
+padding-top: 15px;
+}
+
+.read-more {
+display: inline-block;
+color: var(--secondary);
+font-weight: 600;
+text-decoration: none;
+margin-top: 10px;
+}
+.read-more:hover {
+text-decoration: underline;
+}
+
+@media (max-width: 768px) {
+.page-content { padding: 70px 0 60px; }
+.page-header h1 { font-size: 2rem; }
+.page-header p { font-size: 1rem; }
+.blog-grid { grid-template-columns: 1fr; }
+}
+{% endblock %}
+{% block main %}
+<main class="page-content">
+    <div class="container">
+        <div class="page-header">
+            <h1>Блог</h1>
+            <p>Полезные статьи для предпринимателей: как защитить бизнес от необоснованных претензий ФНС, избежать
+                штрафов и сохранить репутацию.</p>
+        </div>
+
+        <div class="blog-grid">
+            <!-- Статья 1 -->
+            <div class="blog-card">
+                <img src="https://images.unsplash.com/photo-1552664730-d307ca884978?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&h=300&q=80"
+                    alt="Налоговая проверка">
+                <div class="blog-card-content">
+                    <h3>Как вести себя при выездной налоговой проверке</h3>
+                    <p>7 правил поведения, которые помогут избежать доначислений и штрафов. Что можно и нельзя говорить
+                        инспекторам.</p>
+                    <div class="blog-meta">
+                        <span>12 апреля 2025</span>
+                        <a href="/blog/vyezdnoy-proverke.html" class="read-more">Читать →</a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Статья 2 -->
+            <div class="blog-card">
+                <img src="https://images.unsplash.com/photo-1589829545856-d10d557cf95f?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&h=300&q=80"
+                    alt="Доначисления налогов">
+                <div class="blog-card-content">
+                    <h3>Как оспорить доначисление НДС в 2025 году</h3>
+                    <p>Пошаговая инструкция: от анализа акта до подачи возражений и обращения в суд. Судебная практика.
+                    </p>
+                    <div class="blog-meta">
+                        <span>5 апреля 2025</span>
+                        <a href="/blog/osporit-nachislenie-nds.html" class="read-more">Читать →</a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Статья 3 -->
+            <div class="blog-card">
+                <img src="https://images.unsplash.com/photo-1556761175-5973dc0f32e7?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&h=300&q=80"
+                    alt="Блокировка счета">
+                <div class="blog-card-content">
+                    <h3>Блокировка счёта по ст. 76 НК РФ: что делать?</h3>
+                    <p>Пошаговый алгоритм действий в первые 24 часа. Какие документы подавать и как ускорить
+                        разблокировку.</p>
+                    <div class="blog-meta">
+                        <span>28 марта 2025</span>
+                        <a href="/blog/blokirovka-po-76-nk.html" class="read-more">Читать →</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="page-cta"
+            style="background: linear-gradient(135deg, var(--primary) 0%, #2c5282 100%); color: white; padding: 50px; border-radius: 12px; text-align: center; margin-top: 60px;">
+            <h2>Хотите получать новые статьи первыми?</h2>
+            <p>Подпишитесь на нашу рассылку или задайте вопрос — ответим в следующем материале.</p>
+            <a href="/#contact" class="btn btn-accent">Задать вопрос</a>
+        </div>
+    </div>
+</main>
+{% endblock %}

@@ -1,0 +1,155 @@
+{% extends "base.html" %}
+{% block styles %}
+.page-content {
+padding: 100px 0 80px;
+background-color: #fff;
+}
+.page-header {
+text-align: center;
+margin-bottom: 60px;
+}
+.page-header h1 {
+font-size: 2.5rem;
+color: var(--primary);
+margin-bottom: 1.2rem;
+}
+.page-header p {
+font-size: 1.2rem;
+color: var(--gray);
+max-width: 800px;
+margin: 0 auto;
+}
+.page-section {
+margin-bottom: 70px;
+}
+.page-section h2 {
+text-align: center;
+margin-bottom: 40px;
+}
+.page-section h2:after {
+left: 50%;
+transform: translateX(-50%);
+}
+.page-list {
+padding-left: 20px;
+margin-bottom: 40px;
+}
+.page-list li {
+margin-bottom: 16px;
+line-height: 1.7;
+font-size: 1.05rem;
+}
+.page-cta {
+background: linear-gradient(135deg, var(--primary) 0%, #2c5282 100%);
+color: white;
+padding: 50px;
+border-radius: 12px;
+text-align: center;
+margin-top: 40px;
+}
+.page-cta h2 {
+color: white;
+font-size: 2.2rem;
+margin-bottom: 20px;
+}
+.page-cta p {
+color: #e2e8f0;
+font-size: 1.1rem;
+max-width: 700px;
+margin: 0 auto 30px;
+}
+.page-cta .btn {
+background: var(--accent);
+color: var(--dark);
+font-weight: 700;
+}
+.page-cta .btn:hover {
+background: #b88d0a;
+box-shadow: 0 6px 16px rgba(212, 175, 55, 0.4);
+}
+
+@media (max-width: 768px) {
+.page-content { padding: 70px 0 60px; }
+.page-header h1 { font-size: 2rem; }
+.page-header p { font-size: 1rem; }
+.page-cta { padding: 30px 20px; }
+.page-cta h2 { font-size: 1.8rem; }
+.page-cta p { font-size: 1rem; }
+}
+@media (max-width: 576px) {
+.page-header h1 { font-size: 1.7rem; }
+.page-section h2 { font-size: 1.6rem; }
+}
+{% endblock %}
+{% block main %}
+<main class="page-content">
+    <div class="container">
+        <div class="page-header">
+            <h1>Защита от налоговой ответственности</h1>
+            <p>Помогаем избежать штрафов, пеней, взысканий и даже уголовного преследования по налоговым делам.</p>
+        </div>
+
+        <div class="page-section">
+            <h2>Что такое налоговая ответственность?</h2>
+            <p>Это меры воздействия, которые ФНС применяет при нарушении налогового законодательства. Даже
+                добросовестный предприниматель может столкнуться с ней из-за технических ошибок или спорных трактовок.
+            </p>
+            <ul class="page-list">
+                <li><strong>Штрафы</strong> — по ст. 122, 123, 126 НК РФ (до 40% от суммы доначисления)</li>
+                <li><strong>Пени</strong> — начисляются за каждый день просрочки</li>
+                <li><strong>Взыскание с личного имущества</strong> — если долг не погашен</li>
+                <li><strong>Уголовная ответственность</strong> — по ст. 199 УК РФ (при сумме ущерба от 5 млн руб.)</li>
+            </ul>
+        </div>
+
+        <div class="page-section">
+            <h2>Как мы защищаем клиентов</h2>
+            <div class="features-grid">
+                <div class="feature-card">
+                    <div class="feature-icon"><i class="fas fa-balance-scale"></i></div>
+                    <h3>Анализ рисков</h3>
+                    <p>Оцениваем, есть ли основания для привлечения к ответственности.</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon"><i class="fas fa-file-contract"></i></div>
+                    <h3>Подготовка возражений</h3>
+                    <p>Доказываем отсутствие умысла и добросовестность клиента.</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon"><i class="fas fa-gavel"></i></div>
+                    <h3>Судебная защита</h3>
+                    <p>Оспариваем штрафы и пени в суде на всех инстанциях.</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon"><i class="fas fa-shield-alt"></i></div>
+                    <h3>Профилактика УК РФ</h3>
+                    <p>Предотвращаем переход дела в уголовную плоскость.</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="page-section">
+            <h2>Почему важно действовать заранее?</h2>
+            <p>Если ФНС уже вынесла решение о привлечении к ответственности, шансы на успех снижаются. Лучше обратиться
+                к юристу:</p>
+            <ul class="page-list">
+                <li>На этапе налоговой проверки</li>
+                <li>После получения требования об уплате</li>
+                <li>До подачи возражений на акт проверки</li>
+            </ul>
+            <blockquote
+                style="text-align: center; font-style: italic; margin: 30px 0; padding: 0 20px; border-left: none;">
+                «Профессиональный подход и высокий уровень компетенции. Рекомендую всем, кто столкнулся с проблемами с
+                ФНС!»<br>
+                <strong>— Александр Новиков, г. Челябинск</strong>
+            </blockquote>
+        </div>
+
+        <div class="page-cta">
+            <h2>Не ждите решения ФНС — действуйте сейчас!</h2>
+            <p>Первичная консультация — бесплатно. Узнайте, как избежать штрафов и защитить себя.</p>
+            <a href="/#contact" class="btn btn-accent">Получить консультацию</a>
+        </div>
+    </div>
+</main>
+{% endblock %}

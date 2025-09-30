@@ -1,0 +1,153 @@
+{% extends "base.html" %}
+{% block styles %}
+.page-content {
+padding: 100px 0 80px;
+background-color: #fff;
+}
+.page-header {
+text-align: center;
+margin-bottom: 60px;
+}
+.page-header h1 {
+font-size: 2.5rem;
+color: var(--primary);
+margin-bottom: 1.2rem;
+}
+.page-header p {
+font-size: 1.2rem;
+color: var(--gray);
+max-width: 800px;
+margin: 0 auto;
+}
+.page-section {
+margin-bottom: 70px;
+}
+.page-section h2 {
+text-align: center;
+margin-bottom: 40px;
+}
+.page-section h2:after {
+left: 50%;
+transform: translateX(-50%);
+}
+.page-list {
+padding-left: 20px;
+margin-bottom: 40px;
+}
+.page-list li {
+margin-bottom: 16px;
+line-height: 1.7;
+font-size: 1.05rem;
+}
+.page-cta {
+background: linear-gradient(135deg, var(--secondary) 0%, #c1121f 100%);
+color: white;
+padding: 50px;
+border-radius: 12px;
+text-align: center;
+margin-top: 40px;
+}
+.page-cta h2 {
+color: white;
+font-size: 2.2rem;
+margin-bottom: 20px;
+}
+.page-cta p {
+color: #f8f9fa;
+font-size: 1.1rem;
+max-width: 700px;
+margin: 0 auto 30px;
+}
+.page-cta .btn {
+background: var(--accent);
+color: var(--dark);
+font-weight: 700;
+}
+.page-cta .btn:hover {
+background: #b88d0a;
+box-shadow: 0 6px 16px rgba(212, 175, 55, 0.4);
+}
+
+@media (max-width: 768px) {
+.page-content { padding: 70px 0 60px; }
+.page-header h1 { font-size: 2rem; }
+.page-header p { font-size: 1rem; }
+.page-cta { padding: 30px 20px; }
+.page-cta h2 { font-size: 1.8rem; }
+.page-cta p { font-size: 1rem; }
+}
+@media (max-width: 576px) {
+.page-header h1 { font-size: 1.7rem; }
+.page-section h2 { font-size: 1.6rem; }
+}
+{% endblock %}
+{% block main %}
+<main class="page-content">
+    <div class="container">
+        <div class="page-header">
+            <h1>Разблокировка расчётных счетов</h1>
+            <p>Срочная юридическая помощь при блокировке счёта по ст. 76 НК РФ. Гарантируем разблокировку в течение 3–7
+                дней.</p>
+        </div>
+
+        <div class="page-section">
+            <h2>Почему блокируют счёт?</h2>
+            <p>ФНС может приостановить операции по счёту без предварительного уведомления. Основные причины:</p>
+            <ul class="page-list">
+                <li>Непредставление декларации в срок (ст. 76 НК РФ)</li>
+                <li>Неуплата налога или авансового платежа</li>
+                <li>Подозрительные операции по 115-ФЗ («антиотмывочный» закон)</li>
+                <li>Ошибки в платёжных поручениях (некорректный КБК, ИНН)</li>
+                <li>Блокировка по инициативе банка из-за «рискованной» деятельности</li>
+            </ul>
+        </div>
+
+        <div class="page-section">
+            <h2>Как мы помогаем</h2>
+            <div class="features-grid">
+                <div class="feature-card">
+                    <div class="feature-icon"><i class="fas fa-bolt"></i></div>
+                    <h3>Срочная реакция</h3>
+                    <p>Принимаем заявки 24/7. Первые действия — в течение 1 часа.</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon"><i class="fas fa-file-medical"></i></div>
+                    <h3>Анализ оснований</h3>
+                    <p>Определяем, законна ли блокировка и какие документы нужны для разблокировки.</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon"><i class="fas fa-paper-plane"></i></div>
+                    <h3>Подача документов</h3>
+                    <p>Готовим и отправляем в ФНС ходатайство о снятии блокировки.</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon"><i class="fas fa-check-circle"></i></div>
+                    <h3>Контроль результата</h3>
+                    <p>Сопровождаем до полной разблокировки всех операций.</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="page-section">
+            <h2>Реальные результаты</h2>
+            <blockquote
+                style="text-align: center; font-style: italic; margin: 30px 0; padding: 0 20px; border-left: none;">
+                «Счет был заблокирован без предупреждения. Специалисты оперативно подготовили необходимые документы и
+                добились разблокировки в течение недели.»<br>
+                <strong>— Дмитрий Козлов, г. Екатеринбург</strong>
+            </blockquote>
+            <blockquote
+                style="text-align: center; font-style: italic; margin: 30px 0; padding: 0 20px; border-left: none;">
+                «Спасибо за оперативную помощь! Счет был разблокирован в тот же день. Очень довольна результатом!»<br>
+                <strong>— Татьяна Морозова, г. Самара</strong>
+            </blockquote>
+        </div>
+
+        <div class="page-cta">
+            <h2>Счёт заблокирован? Действуйте немедленно!</h2>
+            <p>Каждый день простоя — убытки для бизнеса. Первые 30 минут консультации — бесплатно.</p>
+            <a href="/#contact" class="btn btn-accent">Получить срочную помощь</a>
+        </div>
+    </div>
+</main>
+{% endblock %}
