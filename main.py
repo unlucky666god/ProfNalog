@@ -153,5 +153,13 @@ def cases():
 def privacy():
     return render_template("privacy.html")
 
+@app.route('/sitemap')
+def sitemap():
+    return render_template("sitemap.xml")
+
+@app.route('/robots.txt')
+def robotstxt():
+    return render_template("robots.txt")
+
 if __name__ == '__main__':
     app.run(debug=False)
