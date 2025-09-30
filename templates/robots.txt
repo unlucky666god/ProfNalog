@@ -1,0 +1,9 @@
+User-agent: *
+Disallow: /admin/
+Disallow: /private/
+Disallow: /tmp/
+Disallow: /backup/
+
+Sitemap: https://профналог.рус/sitemap.xml
+
+Host: профналог.рус
