@@ -4,6 +4,6 @@ Disallow: /private/
 Disallow: /tmp/
 Disallow: /backup/
 
-Sitemap: https://ваш-сайт.ru/sitemap.xml
+Sitemap: https://профналог.рус/sitemap.xml
 
-Host: ваш-сайт.ru
+Host: профналог.рус
