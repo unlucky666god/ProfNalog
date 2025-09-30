@@ -1,35 +1,94 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
-        xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-        xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9
-        http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd">
+<!-- Создано с помощью https://sitemap.seolik.ru/ -->
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+   <url>
+      <loc>https://xn--80agxgedci1b.xn--p1acf/nalogovaya-proverka</loc>
+	  <lastmod>2025-09-30T21:26:47+0300</lastmod>
+	  <changefreq>weekly</changefreq>
+	  <priority>1.0</priority>
+   </url>
 
-  <url>
-    <loc>https://профналог.рус/</loc>
-    <lastmod>2023-12-01</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>1.0</priority>
-  </url>
-  
-  <url>
-    <loc>https://профналог.рус/#about</loc>
-    <lastmod>2023-12-01</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
-  </url>
-  
-  <url>
-    <loc>https://профналог.рус/#reviews</loc>
-    <lastmod>2023-12-01</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.7</priority>
-  </url>
-  
-  <url>
-    <loc>https://профналог.рус/#contact</loc>
-    <lastmod>2023-12-01</lastmod>
-    <changefreq>yearly</changefreq>
-    <priority>0.9</priority>
-  </url>
+   <url>
+      <loc>https://xn--80agxgedci1b.xn--p1acf/donachisleniya-nalogov</loc>
+	  <lastmod>2025-09-30T21:26:47+0300</lastmod>
+	  <changefreq>weekly</changefreq>
+	  <priority>1.0</priority>
+   </url>
 
+   <url>
+      <loc>https://xn--80agxgedci1b.xn--p1acf/blokirovka-schetov</loc>
+	  <lastmod>2025-09-30T21:26:47+0300</lastmod>
+	  <changefreq>weekly</changefreq>
+	  <priority>1.0</priority>
+   </url>
+
+   <url>
+      <loc>https://xn--80agxgedci1b.xn--p1acf/nalogovaya-otvetstvennost</loc>
+	  <lastmod>2025-09-30T21:26:47+0300</lastmod>
+	  <changefreq>weekly</changefreq>
+	  <priority>1.0</priority>
+   </url>
+
+   <url>
+      <loc>https://xn--80agxgedci1b.xn--p1acf/blog</loc>
+	  <lastmod>2025-09-30T21:26:47+0300</lastmod>
+	  <changefreq>weekly</changefreq>
+	  <priority>1.0</priority>
+   </url>
+
+   <url>
+      <loc>https://xn--80agxgedci1b.xn--p1acf/faq</loc>
+	  <lastmod>2025-09-30T21:26:47+0300</lastmod>
+	  <changefreq>weekly</changefreq>
+	  <priority>1.0</priority>
+   </url>
+
+   <url>
+      <loc>https://xn--80agxgedci1b.xn--p1acf/cases</loc>
+	  <lastmod>2025-09-30T21:26:47+0300</lastmod>
+	  <changefreq>weekly</changefreq>
+	  <priority>1.0</priority>
+   </url>
+
+   <url>
+      <loc>https://xn--80agxgedci1b.xn--p1acf/privacy</loc>
+	  <lastmod>2025-09-30T21:26:47+0300</lastmod>
+	  <changefreq>weekly</changefreq>
+	  <priority>1.0</priority>
+   </url>
+
+   <url>
+      <loc>https://xn--80agxgedci1b.xn--p1acf/</loc>
+	  <lastmod>2025-09-30T21:26:47+0300</lastmod>
+	  <changefreq>weekly</changefreq>
+	  <priority>1.0</priority>
+   </url>
+
+   <url>
+      <loc>https://xn--80agxgedci1b.xn--p1acf/contact</loc>
+	  <lastmod>2025-09-30T21:26:47+0300</lastmod>
+	  <changefreq>weekly</changefreq>
+	  <priority>1.0</priority>
+   </url>
+
+   <url>
+      <loc>https://xn--80agxgedci1b.xn--p1acf/blog/vyezdnoy-proverke.html</loc>
+	  <lastmod>2025-09-30T21:26:47+0300</lastmod>
+	  <changefreq>weekly</changefreq>
+	  <priority>0.8</priority>
+   </url>
+
+   <url>
+      <loc>https://xn--80agxgedci1b.xn--p1acf/blog/osporit-nachislenie-nds.html</loc>
+	  <lastmod>2025-09-30T21:26:47+0300</lastmod>
+	  <changefreq>weekly</changefreq>
+	  <priority>0.8</priority>
+   </url>
+
+   <url>
+      <loc>https://xn--80agxgedci1b.xn--p1acf/blog/blokirovka-po-76-nk.html</loc>
+	  <lastmod>2025-09-30T21:26:47+0300</lastmod>
+	  <changefreq>weekly</changefreq>
+	  <priority>0.8</priority>
+   </url>
 </urlset>
