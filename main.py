@@ -153,7 +153,7 @@ def cases():
 def privacy():
     return render_template("privacy.html")
 
-@app.route('/sitemap')
+@app.route('/sitemap.xml')
 def sitemap():
     return render_template("sitemap.xml")
 
