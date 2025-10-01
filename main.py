@@ -3,13 +3,16 @@ import json
 import os
 import requests
 from datetime import datetime
+import telebot
 
 app = Flask(__name__)
 app.secret_key = os.getenv('SECRET_KEY', 'dev-secret-key-12345-!@#$%')
 
 # === Настройки Telegram (можно убрать, если не нужна отправка) ===
-TELEGRAM_BOT_TOKEN = os.getenv('TELEGRAM_BOT_TOKEN', '')  # лучше через .env или переменные окружения
-CHAT_IDS = os.getenv('TELEGRAM_CHAT_IDS', '').split(',')  # например: "123456789,987654321"
+TELEGRAM_BOT_TOKEN = os.getenv('TELEGRAM_BOT_TOKEN', '8461294572:AAHIgI2Sm5zHHXotwVTjoMkkbOJGEn-cAj0')  # лучше через .env или переменные окружения
+CHAT_IDS = os.getenv('TELEGRAM_CHAT_IDS', '839519148,5362530571,110508270').split(',')  # например: "123456789,987654321"
+
+bot = telebot.TeleBot(TELEGRAM_BOT_TOKEN, threaded=False)
 
 # Путь к JSON-файлу
 DATA_FILE = 'submissions.json'
@@ -55,9 +58,8 @@ def save_to_json(data):
         raise
 
 def send_telegram_notification(data):
-    """Отправляет уведомление в Telegram (если настроено)"""
-    if not TELEGRAM_BOT_TOKEN or not CHAT_IDS or not CHAT_IDS[0]:
-        return  # Пропускаем, если не настроено
+    if not TELEGRAM_BOT_TOKEN or not CHAT_IDS:
+        return
 
     text = f"""
 🔔 Новая заявка на сайте!
@@ -69,18 +71,13 @@ def send_telegram_notification(data):
 Время: {data['timestamp']}
     """.strip()
 
-    url = f'https://api.telegram.org/bot{TELEGRAM_BOT_TOKEN}/sendMessage'
     for chat_id in CHAT_IDS:
         chat_id = chat_id.strip()
         if chat_id:
             try:
-                requests.post(url, data={
-                    'chat_id': chat_id,
-                    'text': text,
-                    'parse_mode': 'HTML'
-                })
+                bot.send_message(chat_id=chat_id, text=text, parse_mode='HTML')
             except Exception as e:
-                print(f"Ошибка отправки в Telegram: {e}")
+                print(f"Ошибка отправки в Telegram через telebot: {e}")
 
 @app.route('/submit', methods=['POST'])
 def submit_form():
